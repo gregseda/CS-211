@@ -1,0 +1,15 @@
+using namespace std;
+
+#include "employee.h"
+
+int main()
+{
+  Employee emp1; 
+
+  emp1.Print();
+
+  Employee emp2;
+
+  
+
+}
