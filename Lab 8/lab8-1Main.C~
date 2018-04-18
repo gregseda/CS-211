@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int gcd(int x, int y)
+{
+  if(y == 0)
+    return x;
+  else
+    {
+      int a = gcd(x, x%y);
+      return a;
+    }
+}
+int main()
+{
+  int x = 0;
+  int y = 0;
+
+  cout << "Please the first number(x): ";
+  cin >> x;
+  cout << "Please the second number(y): ";
+  cin >> y;
+
+  int z = gcd(x,y);
+  cout << "The GCD of " << x << " and " << y <<  " is " << z << "." << endl;
+
+  return 0;
+}
+
