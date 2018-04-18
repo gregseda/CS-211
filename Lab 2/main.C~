@@ -1,0 +1,44 @@
+#lnclude <vector>
+#include <string>
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+#include "data.txt"
+
+void Insert(vector<string>& v, string word, int pos);
+void Delete(vector <string>& v, int pos);
+void Print(const vector <string>& v);
+
+int main()
+{
+  vector <string> v;
+  
+  ifstream fin;
+  fin.open("data.txt");
+
+  if(!fin)
+    {
+      cout << "ERROR" << endl;
+    }
+  else
+    {
+      fin >> cmnd;
+      while(fin)
+	{
+	  if( cmnd == 'Insert')
+	    {
+	    }
+	  else if(cmnd == 'Delete')
+	    {
+	    }
+	  else if(cmnd == 'Print')
+	    {
+	    }
+	  else 
+	    {
+	      cout << "EROOR
+
+  return 0;
+}
