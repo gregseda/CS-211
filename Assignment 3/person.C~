@@ -1,0 +1,42 @@
+/*******************************************************
+Author: Greg Seda
+Purpose: This is the Person class file.
+********************************************************/
+
+#include "person.h"
+
+#include <iostream>
+
+using namespace std;
+
+Person::Person()
+{
+  id = 0;
+  name = email = address = dateOfBirth = gender = "Unknown";
+}
+Person::~Person()
+{
+
+}
+Person::Person(long theId, string theName, string theEmail, string theAddress, string theBirth, string theGender)
+{
+  id = theId;
+  name = theName;
+  email = theEmail;
+  address = theAddress;
+  dateOfBirth = theBirth;
+  gender = theGender;
+}
+void Person::Print() 
+{
+  cout << "Id: " << id << endl;
+  cout << "Name: " << name << endl;
+  cout << "Email: " << email << endl;
+  cout << "Address: " << address << endl;
+  cout << "Date of Birth: " << dateOfBirth << endl;
+  cout << "Gender: " << gender << endl;
+}
+long Person::GetId()
+{
+  return id;
+}

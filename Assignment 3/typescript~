@@ -1,0 +1,372 @@
+Script started on Mon 16 Nov 2015 03:10:08 PM PST
+]0;seda004@empress:~/cs211/A3[seda004@empress A3]$ ./a.out
+
+******************* CreateNewDepartment ComputerScience **************
+The new department ComputerScience was created.
+
+
+******************* CreateNewDepartment Education **************
+The new department Education was created.
+
+
+******************* CreateNewDepartment Business **************
+The new department Business was created.
+
+
+******************* CreateNewDepartment Engineering **************
+The new department Engineering was created.
+
+
+******************* CreateNewDepartment Biology **************
+The new department Biology was created.
+
+
+******************* ListDepartments *****************
+Department Id: 100
+Department Name: ComputerScience
+
+Department Id: 101
+Department Name: Education
+
+Department Id: 102
+Department Name: Business
+
+Department Id: 103
+Department Name: Engineering
+
+Department Id: 104
+Department Name: Biology
+
+
+
+********************** CreateNewFaculty John_Smith ***************
+The new faculty member John_Smith was successfully created.
+
+
+********************** CreateNewFaculty Bob_Anderson ***************
+The new faculty member Bob_Anderson was successfully created.
+
+
+********************** CreateNewFaculty Sue_Clark ***************
+The new faculty member Sue_Clark was successfully created.
+
+
+********************** CreateNewFaculty Abu_Talib ***************
+The new faculty member Abu_Talib was successfully created.
+
+
+********************** CreateNewFaculty Nancy_Bank ***************
+The new faculty member Nancy_Bank was successfully created.
+
+
+********************** CreateNewFaculty Susan_Brown ***************
+The new faculty member Susan_Brown was successfully created.
+
+
+********************** CreateNewFaculty Ahmad_Saleh ***************
+The new faculty member Ahmad_Saleh was successfully created.
+
+
+********************** CreateNewFaculty Beth_Card ***************
+The new faculty member Beth_Card was successfully created.
+
+
+********************** CreateNewFaculty Joe_Abraham ***************
+The new faculty member Joe_Abraham was successfully created.
+
+
+********************** CreateNewFaculty Andy_Chan ***************
+The department 130 does not exist.
+Error! The new faculty member Andy_Chan was not created.
+
+
+***************** ListFaculties ******************
+Faculty Id: 600
+Faculty Name: John_Smith
+
+Faculty Id: 601
+Faculty Name: Bob_Anderson
+
+Faculty Id: 602
+Faculty Name: Sue_Clark
+
+Faculty Id: 603
+Faculty Name: Abu_Talib
+
+Faculty Id: 604
+Faculty Name: Nancy_Bank
+
+Faculty Id: 605
+Faculty Name: Susan_Brown
+
+Faculty Id: 606
+Faculty Name: Ahmad_Saleh
+
+Faculty Id: 607
+Faculty Name: Beth_Card
+
+Faculty Id: 608
+Faculty Name: Joe_Abraham
+
+
+
+******************* ListFacultiesInDepartment 100 *******************
+Faculty Id: 600
+Faculty Name: John_Smith
+
+Faculty Id: 601
+Faculty Name: Bob_Anderson
+
+Faculty Id: 602
+Faculty Name: Sue_Clark
+
+
+
+******************* ListFacultiesInDepartment 101 *******************
+Faculty Id: 603
+Faculty Name: Abu_Talib
+
+Faculty Id: 604
+Faculty Name: Nancy_Bank
+
+Faculty Id: 605
+Faculty Name: Susan_Brown
+
+
+
+******************* ListFacultiesInDepartment 102 *******************
+Faculty Id: 606
+Faculty Name: Ahmad_Saleh
+
+Faculty Id: 607
+Faculty Name: Beth_Card
+
+Faculty Id: 608
+Faculty Name: Joe_Abraham
+
+
+
+******************* ListFacultiesInDepartment 130 *******************
+The department 130 does not exist.
+Error! The faculties in department 130 were not listed.
+
+
+****************** CreateNewStudent Kathy_Chen *****************
+The new student Kathy_Chen was successfully created.
+
+
+****************** CreateNewStudent Kelly_Wong *****************
+The new student Kelly_Wong was successfully created.
+
+
+****************** CreateNewStudent Layla_Esmail *****************
+The advisor 910 does not exist.
+Error! The new student Layla_Esmail was not created.
+
+
+**************** ListStudents *****************
+Student Id: 500
+Student Name: Kathy_Chen
+
+Student Id: 501
+Student Name: Kelly_Wong
+
+
+
+******************* ListStudentsOfAFaculty 600 ********************
+Student Id: 500
+Student Name: Kathy_Chen
+Student Id: 501
+Student Name: Kelly_Wong
+
+
+******************* ListStudentsOfAFaculty 650 ********************
+The faculty id 650 does not exist.
+
+Error! The students of faculty 650 were not listed.
+
+
+***************** CreateNewCourse CS111 **********
+The new course CS111 was successfully created.
+
+
+***************** CreateNewCourse CS211 **********
+The new course CS211 was successfully created.
+
+
+***************** CreateNewCourse CS311 **********
+No one is assigned to teach this course.
+Error! The new course CS311 was not created.
+
+
+***************** CreateNewCourse Ed100 **********
+The new course Ed100 was successfully created.
+
+
+***************** CreateNewCourse Ed200 **********
+The new course Ed200 was successfully created.
+
+
+***************** CreateNewCourse Ed300 **********
+No one is assigned to teach this course.
+Error! The new course Ed300 was not created.
+
+
+***************** CreateNewCourse Bus101 **********
+The new course Bus101 was successfully created.
+
+
+***************** CreateNewCourse Bus102 **********
+The new course Bus102 was successfully created.
+
+
+***************** CreateNewCourse Bus103 **********
+The new course Bus103 was successfully created.
+
+
+***************** CreateNewCourse Bio103 **********
+The faculty member 706 does not exist.
+Error! The new course Bio103 was not created.
+
+
+***************** ListCourses *****************
+Course Id: 200
+Course Name: CS111
+
+Course Id: 201
+Course Name: CS211
+
+Course Id: 202
+Course Name: Ed100
+
+Course Id: 203
+Course Name: Ed200
+
+Course Id: 204
+Course Name: Bus101
+
+Course Id: 205
+Course Name: Bus102
+
+Course Id: 206
+Course Name: Bus103
+
+
+
+********************** ListCoursesTaughtByFaculty 606 *****************
+Course Id: 204
+Course Name: Bus101
+Course Id: 205
+Course Name: Bus102
+
+
+********************** ListCoursesTaughtByFaculty 706 *****************
+The faculty id 706 does not exist.
+Error! The courses taught by 706 were not listed.
+
+
+******************** ListCoursesOfADepartment 100 ******************
+Course Id: 200
+Course Name: CS111
+Course Id: 201
+Course Name: CS211
+
+
+******************** ListCoursesOfADepartment 101 ******************
+Course Id: 202
+Course Name: Ed100
+Course Id: 203
+Course Name: Ed200
+
+
+******************** ListCoursesOfADepartment 102 ******************
+Course Id: 204
+Course Name: Bus101
+Course Id: 205
+Course Name: Bus102
+Course Id: 206
+Course Name: Bus103
+
+
+******************** ListCoursesOfADepartment 130 ******************
+The department 130 does not exist.
+Error! The courses of department  130 were not listed.
+
+
+****************** AddACourseForAStudent 500 ***********************
+Course id 200 was found.
+The course 200 was added to the student.
+The course 200 was successfully added for student 500.
+
+
+****************** AddACourseForAStudent 500 ***********************
+Course id 201 was found.
+The course 201 was added to the student.
+The course 201 was successfully added for student 500.
+
+
+****************** AddACourseForAStudent 500 ***********************
+Course id 202 was found.
+The course 202 was added to the student.
+The course 202 was successfully added for student 500.
+
+
+****************** AddACourseForAStudent 500 ***********************
+The course Id 230 does not exist.
+Error! The course 230 was not added for student 500.
+
+
+************************ ListCoursesTakenByStudent 500 **************
+Course Id: 200
+Course Name: CS111
+Course Id: 201
+Course Name: CS211
+Course Id: 202
+Course Name: Ed100
+
+
+************************ ListCoursesTakenByStudent 520 **************
+The student Id 520 does not exist.
+Error! The courses taken by 520 were not listed.
+
+
+************************ ListCoursesTakenByStudent 500 **************
+Course Id: 200
+Course Name: CS111
+Course Id: 201
+Course Name: CS211
+Course Id: 202
+Course Name: Ed100
+
+
+*************** AssignDepartmentChair 600 ****************
+The faculty member 600 was successfully assigned to be department chair of 100.
+
+
+*************** AssignDepartmentChair 610 ****************
+The faculty id 610 does not exist.
+Error! The faculty member 610 was not assigned to be department chair of 101.
+
+
+*************** AssignDepartmentChair 601 ****************
+The department id 110 does not exist.
+Error! The faculty member 601 was not assigned to be department chair of 110.
+
+
+***************** AssignInstructorToCourse 600 ******************
+Course id 202 was found.
+The instructor 600 was successfully assigned to the course 202.
+
+
+********************** ListCoursesTaughtByFaculty 600 *****************
+Course Id: 200
+Course Name: CS111
+Course Id: 201
+Course Name: CS211
+Course Id: 202
+Course Name: Ed100
+
+]0;seda004@empress:~/cs211/A3[seda004@empress A3]$ exit
+exit
+
+Script done on Mon 16 Nov 2015 03:10:14 PM PST
