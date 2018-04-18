@@ -1,0 +1,52 @@
+#include <iostream>
+
+#include "TenureTrackProf.h"
+#include "professor.h"
+
+using namespace std;
+
+TenureTrackProf::TenureTrackProf()
+{
+  rank = '?';
+  YearOfExp = 0;
+}
+TenureTrackProf::TenureTrackProf(char theRank, int exp, string theName, string mail, int Id):CompSciProfessor(theName, mail, Id)
+{
+  rank = theRank;
+  YearOfExp = exp;
+}
+void TenureTrackProf::print() const
+{
+  cout << "Name: " << name << endl;
+  cout << "Email: " << email << endl;
+  cout << "Faculty Id: " << facultyId << endl;
+  cout << "Rank: " << rank << endl;
+  cout << "Years of Experience: " << YearOfExp << endl;
+}
+void TenureTrackProf::GetInfo()
+{
+  cout << "A --> Assistant Professor, S --> Associate Professor, F --> Full Professor" << endl;
+  cout << "Please enter your rank of tenure." << endl;
+  cin >> rank;
+
+  cout << "Please enter the number of years you have been teaching in the computer science department." << endl;
+  cin >> YearOfExp;
+}
+float TenureTrackProf::findSalary() const
+{
+  float salary;
+  if(rank == 'A')
+    {
+      salary = 65000 + (1500 * YearOfExp);
+    }
+  if(rank == 'S')
+    {
+      salary = 80000 + (1500 * YearOfExp);
+    }
+  if(rank == 'F')
+    {
+      salary = 90000 + (1500 * YearOfExp);
+    }
+  return salary;
+
+}
